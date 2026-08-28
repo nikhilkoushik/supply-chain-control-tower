@@ -1,0 +1,11 @@
+kpi_name,kpi_value,unit
+Total Sales,33054402.38,USD
+Total Profit,3966902.97,USD
+Unique Orders,65752.0,Orders
+Late Delivery Rate,54.83,Percent
+Average Actual Shipping Days,3.5,Days
+Average Shipping Delay Days,0.57,Days
+Forecast WAPE,25.21,Percent
+Forecast Accuracy,74.79,Percent
+Forecast Bias,-6.22,Percent
+Forecasted A-Class SKUs,20.0,SKUs

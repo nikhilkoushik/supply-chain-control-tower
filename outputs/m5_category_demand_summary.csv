@@ -1,0 +1,4 @@
+cat_id,total_units_sold,total_revenue,unique_skus,average_daily_units
+FOODS,5471661,13628360.34,1437,1.96
+HOUSEHOLD,1468504,6100507.55,1047,0.72
+HOBBIES,892083,3225415.88,565,0.81

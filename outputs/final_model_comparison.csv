@@ -1,0 +1,4 @@
+model,wape_percent,wape_derived_accuracy_percent,forecast_bias_percent
+Seasonal Naïve Baseline,34.29,65.71,-2.55
+Initial ML Model,26.68,73.32,2.16
+Recursive LightGBM,25.21,74.79,-6.22

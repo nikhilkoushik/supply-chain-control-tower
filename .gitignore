@@ -1,0 +1,8 @@
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Keep large raw source datasets local only
+data/raw/
