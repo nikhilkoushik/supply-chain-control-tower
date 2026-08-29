@@ -98,4 +98,67 @@ The application identifies high-priority SKUs based on recommended inventory lev
 
 The Streamlit application includes an AI Copilot powered by Gemini and grounded in approved DuckDB project tables.
 
-The Copilot can answer questions such as
+The Copilot can answer questions such as:
+
+- Which shipping mode has the highest late-delivery rate?
+- Which regions have the greatest delivery-risk priority?
+- Which forecast model performed best?
+- What is the forecast for `FOODS_2_019`?
+- Which SKUs have the highest recommended stock levels?
+- What are the current executive supply-chain KPIs?
+
+To prevent unsupported responses, the Copilot retrieves relevant evidence from approved DuckDB tables before generating an answer.
+
+---
+
+## Application Features
+
+### Delivery Risk
+
+- Late-delivery rate by shipping mode
+- Top regional delivery-risk priorities
+- Executive KPI summary
+
+### Demand Forecast
+
+- Forecast-model comparison
+- SKU selector
+- Actual vs. Recursive LightGBM forecast visualization
+- Forecast accuracy and WAPE evaluation
+
+### Inventory Recommendations
+
+- Bias-adjusted replenishment recommendations
+- Category filtering
+- Reorder point and safety-stock visibility
+- Revenue-based SKU prioritization
+
+### AI Copilot
+
+- Natural-language questions
+- Evidence-backed responses
+- Governed access to approved project data only
+
+---
+
+## Architecture
+
+```text
+Historical Supply-Chain and Retail Data
+                │
+                ▼
+Data Cleaning and Feature Engineering
+                │
+                ▼
+Forecasting and Inventory Logic
+                │
+                ▼
+Validated CSV Outputs + DuckDB Database
+                │
+                ├── Tableau Public Dashboard
+                │
+                └── Streamlit AI Supply Chain Copilot
+                         │
+                         ▼
+                  Gemini-Powered Q&A
+
